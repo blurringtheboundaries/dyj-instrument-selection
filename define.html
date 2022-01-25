@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Define Your Journey: page generator</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="dyj.css">
+</head>
+  <banner class=main>
+    <h1 style="color:#fff">Define Your Journey: page generator</h1>
+    <div class="text">
+      <p>This page generates an instrument to accompany a video from Joanne Cox's Define Your Journey.</p>
+      <p>Choose the options to customise a piece and press "go".</p>
+    </div>
+    </banner>
+    <main class="text">
+      <form action='https://blurringtheboundaries.org/dyj/bars'>
+        <group aria-labelledby="choose_video">
+          <h2 id='choose_video'><span aria-hidden='true'>📺 </span>Choose the video piece:</h2>
+          <input type="radio" id="trees" name="clip" value="wbmDZoBWQdw" checked>
+          <label for="trees">UK Tree Path</label><br>
+          <input type="radio" id="bedbug" name="clip" value="arR47ejh3dA">
+          <label for="dance">Bed Bug Path</label><br>
+        </group>
+
+        <group aria-labelledby="choose_instrument">
+          <h2 id='choose_instrument'><span aria-hidden='true'>🎻 </span>Choose the instrument tone</h2>
+          <input type="radio" id="cello" name="sound" value="cello" checked>
+          <label for="cello">Cello</label><br>
+          <input type="radio" id="harp" name="sound" value="harp">
+          <label for="harp">Harp</label><br>
+        </group>
+
+        <group aria-labelledby="choose_echo">
+          <h2 id='choose_echo'><span aria-hidden='true'>🎨 </span>Echo effect on or off?</h2>
+          <input type="checkbox" id="echo" name="echo" value="echo" checked>
+          <label for="echo">Echo</label><br>
+        </group>
+
+        <group  aria-labelledby="choose_paint">
+          <h2 id='choose_paint'><span aria-hidden='true'>🎨 </span>Visual effect: painting on the instrument?</h2>
+          <input type="checkbox" id="paint" name="paint" value="paint">
+          <label for="paint">Paint</label><br>
+        </group>
+
+        <input type="submit" value="Go" style='font-size:large;'></input>
+      </form>
+    </main>
+  
+ 
